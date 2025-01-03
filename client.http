@@ -1,0 +1,113 @@
+### Place an order
+POST http://localhost:8080/orders
+Accept: application/json
+Content-Type: application/json
+Authorization: 12345
+
+{
+  "ticker": "BTC",
+  "price": 93251.00,
+  "quantity": 1.0,
+  "direction": "ASK"
+}
+
+### Place an order
+POST http://localhost:8080/orders
+Accept: application/json
+Content-Type: application/json
+Authorization: 99999
+
+{
+  "ticker": "BTC",
+  "price": 93250.00,
+  "quantity": 0.25,
+  "direction": "BID"
+}
+
+### Place an order
+POST http://localhost:8080/orders
+Accept: application/json
+Content-Type: application/json
+Authorization: 99998
+
+{
+  "ticker": "BTC",
+  "price": 93253.00,
+  "quantity": 0.35,
+  "direction": "BID"
+}
+
+
+### Get an order
+GET http://localhost:8080/orders/1
+Accept: application/json
+Content-Type: application/json
+Authorization: 12345
+
+### Get trades
+GET http://localhost:8080/trades?orderId=1
+Accept: application/json
+Content-Type: application/json
+Authorization: 12345
+
+### Get an order
+GET http://localhost:8080/orders/3
+Accept: application/json
+Content-Type: application/json
+Authorization: 99998
+
+### Get trades
+GET http://localhost:8080/trades?orderId=3
+Accept: application/json
+Content-Type: application/json
+Authorization: 99998
+
+### Place an order
+POST http://localhost:8080/orders
+Accept: application/json
+Content-Type: application/json
+Authorization: 12300
+
+{
+  "ticker": "BTC",
+  "price": 93251.00,
+  "quantity": 0.65,
+  "direction": "BID"
+}
+
+### Get an order
+GET http://localhost:8080/orders/1
+Accept: application/json
+Content-Type: application/json
+Authorization: 12345
+
+### Get trades
+GET http://localhost:8080/trades?orderId=1
+Accept: application/json
+Content-Type: application/json
+Authorization: 12345
+
+### Get an order
+GET http://localhost:8080/orders/4
+Accept: application/json
+Content-Type: application/json
+Authorization: 12300
+
+### Get trades
+GET http://localhost:8080/trades?orderId=4
+Accept: application/json
+Content-Type: application/json
+Authorization: 12300
+
+### Get an order
+GET http://localhost:8080/orders/4
+Accept: application/json
+Content-Type: application/json
+Authorization: 12301
+
+### Get trades
+GET http://localhost:8080/trades?orderId=4
+Accept: application/json
+Content-Type: application/json
+Authorization: 12301
+
